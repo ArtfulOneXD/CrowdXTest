@@ -1,0 +1,116 @@
+/* ===========================
+   General Body & Font
+=========================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    margin: 0;
+    padding: 0;
+    color: #1f2937; /* Gray-800 */
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #111827; /* Gray-900 */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.125rem;
+    color: #4b5563; /* Gray-700 */
+    line-height: 1.6;
+}
+
+/* ===========================
+   Survey Card
+=========================== */
+main.card {
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 1024px;
+    width: 100%;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+main.card h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+main.card p {
+    text-align: center;
+    color: #6b7280; /* Gray-500 */
+    margin-bottom: 1.5rem;
+}
+
+/* ===========================
+   Google Form Container
+=========================== */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e2e8f0; /* Gray-200 */
+    border-radius: 0.75rem;
+}
+
+/* Aspect ratio container */
+.aspect-[4/3] {
+    position: relative;
+    padding-bottom: 75%; /* 4:3 ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.aspect-[4/3] iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* ===========================
+   Footer
+=========================== */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    font-size: 0.875rem;
+    color: #6b7280; /* Gray-500 */
+}
+
+/* ===========================
+   Responsive tweaks
+=========================== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main.card {
+        padding: 1.5rem;
+    }
+}
