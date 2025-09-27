@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrowdX Project Sharing Survey</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles to make it more professional */
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+        }
+        h1, h2 {
+            letter-spacing: 0.5px;
+        }
+        iframe {
+            border: 2px solid #e2e8f0;
+        }
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start p-6">
+
+    <!-- Header Section -->
+    <header class="w-full max-w-4xl text-center mb-10">
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-4">CrowdX Project Sharing Survey</h1>
+        <p class="text-gray-700 text-lg">
+            We are testing if students and local business owners want a dedicated platform to share and showcase their projects.  
+            Your feedback will help us build a platform that truly matters.
+        </p>
+    </header>
+
+    <!-- Survey Card -->
+    <main class="w-full max-w-4xl bg-white rounded-xl shadow-lg p-6 card">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Take the Survey</h2>
+        <p class="text-gray-600 mb-6 text-center">Please complete the form below. All responses are anonymous and will help improve CrowdX.</p>
+
+        <div class="w-full aspect-[4/3] rounded-lg overflow-hidden">
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1DvMaG3ALf7Qb0JuR1Aqh9KM2LEkZzmOz1FqPO7_RkfI/viewform?embedded=true" 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0" 
+                class="w-full h-full">
+                Loading…
+            </iframe>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full max-w-4xl text-center mt-10">
+        <p class="text-gray-500 text-sm">
+            Thank you for taking the time to provide your feedback. Together, we can make CrowdX a valuable platform for students and local entrepreneurs.
+        </p>
+    </footer>
+
+</body>
+</html>
